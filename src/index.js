@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import firebase from 'firebase';
+import {FIREBASE_CONFIG} from './properties';
+firebase.initializeApp(FIREBASE_CONFIG);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
